@@ -1,3 +1,3 @@
 # libritou
 projet euler problems xd
-wenas resolver todos los problemas de projet euler siuuuuuuu
+wenas voa resolver todos los problemas de projet euler siuuuuuuu
