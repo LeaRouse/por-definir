@@ -1,0 +1,9 @@
+Nos piden hallar la suma de los números que son múltiplos de 3 o de 5 que están en el rango de 1 a 999.
+Notamos que recorrer por los números del 1 al 999, nos tomaría menos de un segundo, por lo cual haremos un ciclo /for/ 
+para recorrer los números y ver si es que son múltiplos de 3 o de 5 e ir a acumulando la suma.
+//pseudocódigo
+
+para cada (1<=n<=999)
+    si (n es múltiplo de 3 o n es múltiplo de 5)
+        se suma n a la respuesta.
+    
