@@ -1,0 +1,13 @@
+Sea f la suceción de fibonacci
+Sabemos que  f(i)=f(i-1)+f(i-2) para todo i>=3 donde f(1)=1 y f(2)=2.
+Guardaremos los números de fibonacci en un arreglo con el fin de hallar el número de fibonacci siguiente en O(1).
+Luego haremos un ciclo /for/ para hallar todos los números de fibonacci que son menores o iguales a 4e6 y veremos si ese término de fibonacci 
+es par, por último acumularemos la suma de los numeros.
+//pseudocodigo
+f(1)=1,f(2)=2
+para cada ( 3<= n <=4e6 )
+    f(n)=f(n-1)+f(n-2)
+    si f(n)>4e6
+        Dejamos de hallar términos de fibonacci, ya que la sucesión de fibonacci es creciente.
+    si f(n) es par
+        Se suma f(n) a la respuesta.
