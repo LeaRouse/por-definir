@@ -1,0 +1,18 @@
+Prácticamente lo que necesitamos hallar es el mínimo común múltiplo de los números del 1 al 20
+Idea: Hallaremos cuantos factores 2<=p<=19 (primo) hay en cada uno de los números del 1 al 20 y tomaremos la máxima cantidad de factores p que aparece en uno de lo números.
+      Al final iteraremos por cada primo p y lo multiplicaremos a la respuesta la cantidad máxima de veces que apareció en un número del 1 al 20.
+//pseudocodigo 
+Para cada número n del 1 al 20
+      Para cada primo 2<=p<=19
+          Número de factores p=0
+          Mientras p|n
+              Se le suma 1 al número de factores p.
+              y dividimos a n en p
+          Luego actualizamos el máximo número de factores p.     
+respuesta=1
+Para cada primo 2<=p<=19
+    Desde 1 a  la cantidad máxima de factores p
+        Se multiplica p a la respuesta.
+  
+
+ 
