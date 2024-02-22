@@ -1,0 +1,30 @@
+Sea n un número
+Notamos que a lo más existe un primo p / p  >=raiz(n)
+Demostración:
+    Supongamos lo contrario (existen p y q distintos / p|n , q|n , p!=q y p,q>= raiz(n) ) 
+    Como p y q son distintos y primos 
+    --> n>=p*q
+    --> n>=raiz(n)*q
+    --> n>=raiz(n)*raiz(n)
+    Luego se da la igualdad en todas las desigualdades .
+    -->p=q=raiz(n) ( -><- )
+    Luego la demostracion esta completa.
+Idea: Iteramos por todos los numeros desde el 2 hata raiz de n y si un i|n entonces sacamos todos los factores i del número n.
+      Notamos que i siempre es primo.
+      Demostración:
+            Supongamos lo contrario ( Al iterar existe un i / i|n y además i es un número compuesto ){
+            Como i es un número compuesto tomemos en cuenta su descomposición canónica:
+                    i=//decomposición e latex//p1*p2*p3........
+            Como i|n --> p1|n pero p1<i ( -><- ) ya que p1|n y p1<i entonces al momento de iterar p1 apareció antes que el número i 
+                                                 por lo cual a n se le quitaron todos los factores p1 entonces p1 ya no divide a n.    
+            Luego la demostración esta completa.
+Notamos que la complejidad de la idea es a lo más O(raiz(n)*logn)
+//pseudocodigo
+      Para cada (2<=i<=raiz(n))
+          Mientras(i|n)
+                Dividimos a n entre i.
+                Posible primo máximo = i
+      si n es distinto a 1
+          Entonces n es un primo mayor a todos los demás primos, luego es el primo máximo.
+  
+                    
