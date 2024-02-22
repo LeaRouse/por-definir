@@ -1,0 +1,8 @@
+Idea: Utilizaremos la paradigma de fuerza bruta, hallaremos todos los números que son la multiplicación de dos números de 3 cifras 
+      y para cada uno de ellos veremos si es un palíndromo, si lo último es cierto entonces guardaremos el mayor de los números.
+Notamos que la cantidad máxima de operaciones es 1000*1000*6 = 6e6 <1e8 lo cual se realiza en menos de un segundo.
+//pseudocodigo
+para cada (100<=i<=999)
+    para cada (i<=j<=999)
+        si i*j es palíndromo 
+            acumulamos el mayor i*j
