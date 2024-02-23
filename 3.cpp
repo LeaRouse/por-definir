@@ -1,5 +1,4 @@
 // IOI - EGOI - OII 2024 
-// ฅ^•ﻌ•^ฅ
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(0); cin.tie(0);
 #define ss second
@@ -10,8 +9,8 @@ const int MAX=2e5+5;
 ll A[MAX];
 
 void go(){
-    ll n=600851475143;
-    int prime=0;
+    ll n;   cin>>n;
+    ll prime=0;
     for(int i=2;1LL*i*i<=n;i++){
         while(n%i==0){
             n/=i;
@@ -26,6 +25,8 @@ void go(){
 
 int main(){
     fastio;
-    go();
+    int t;  cin>>t;
+    while(t--)
+        go();
     return 0;
 }
