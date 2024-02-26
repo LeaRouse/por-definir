@@ -1,0 +1,25 @@
+// IOI - EGOI - OII 2024 
+#include <bits/stdc++.h>
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0);
+#define ss second
+#define ff first
+#define ll long long
+using namespace std;
+const int MAX=2e5+5;
+int A[MAX];
+
+void go(){
+    int n; cin>>n;
+    ll suma1=1LL*(n+1)*n/2; suma1*=suma1;   //(1+2+3+...+n)^2
+    ll suma2=1LL*n*(n+1)*(2*n+1)/6;         //1^2+2^2+3^2+...+n^2
+    cout<<suma1-suma2<<endl;
+}
+
+int main(){
+    fastio;
+    int t;  cin>>t;
+    while(t--){
+        go();
+    }
+    return 0;
+}
